@@ -4,8 +4,11 @@ body {
 }
 
 nav {
-  padding: 5px;
-  line-height: 3;
+  padding-right: 15px;
+  text-align: right;
+}
+nav a {
+  display: block;  
 }
 
 header {
@@ -66,6 +69,12 @@ input[type="email"] {
 #products article {
   padding-left: 3%;
   padding-right: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+#products article h1 {
+  font-size: 2em;
 }
 
 .card img {
@@ -106,6 +115,7 @@ footer p {
   padding: 5px;
 }
 
+/* Reglas para pantallas más grandes: */
 @media screen and (min-width: 700px) {
   #section3 #products {
     display: flex;
@@ -123,4 +133,14 @@ footer p {
   video {
     max-width: 700px;
   }
+
+  nav {
+  padding: 5px;
+  line-height: 3;
+}
+
+nav a {
+  display: inline-block;  
+}
+
 }
