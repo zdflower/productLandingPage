@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+nav {
+  padding: 5px;
+  line-height: 3;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -27,15 +32,26 @@ main {
 
 #top {
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 form {
-  display: flex;
-  justify-content: center;
+  display:inline-block;
+}
+
+input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+input[type="email"] {
+  width: 200px;
 }
 
 #section1 img {
-  height: 60px;
+  width: 100px;
 }
 
 #section3 #products {
@@ -52,12 +68,19 @@ form {
   padding-right: 3%;
 }
 
+.card img {
+  float: left;
+  margin: 20px;
+}
+
 section {
   padding: 10px;
 }
 
 #section1 {
   background-color: pink;
+  display: flex;
+  flex-direction: column;
 }
 
 #section2 {
@@ -77,14 +100,27 @@ footer {
   background-color: orange;
 }
 
+footer p {
+  margin: 0;
+  text-align:right;
+  padding: 5px;
+}
+
 @media screen and (min-width: 700px) {
   #section3 #products {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   article {
-  width: 30%;
+    width: 30%;
   }
-
+  main {
+    margin: auto;
+    width: 80%;
+  }
+  
+  video {
+    max-width: 700px;
+  }
 }
